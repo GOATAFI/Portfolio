@@ -7,23 +7,33 @@ export default function StoryCard({
   description,
 }) {
   return (
-    <FullScreen className="items-start">
-      <div className="max-w-3xl">
+    <FullScreen className="px-8 md:px-20">
+      <div className="w-full max-w-7xl mx-auto">
 
         <FadeText>
-          <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm">
+          <p className="text-center uppercase tracking-[0.6em] text-zinc-500 text-sm">
             {eyebrow}
           </p>
         </FadeText>
 
         <FadeText delay={0.2}>
-          <h2 className="text-5xl font-light mt-4 leading-tight">
+          <h2 className="text-center text-5xl md:text-8xl font-extralight mt-6 leading-none">
             {title}
           </h2>
         </FadeText>
 
         <FadeText delay={0.4}>
-          <p className="text-zinc-400 text-xl mt-8 leading-relaxed">
+          <div className="mt-16 aspect-video rounded-3xl overflow-hidden bg-gradient-to-br from-zinc-900 to-zinc-800 border border-zinc-700 flex items-center justify-center">
+
+            <span className="text-zinc-500 text-xl">
+              Award Image
+            </span>
+
+          </div>
+        </FadeText>
+
+        <FadeText delay={0.6}>
+          <p className="max-w-3xl mx-auto text-center text-zinc-400 text-xl leading-9 mt-14">
             {description}
           </p>
         </FadeText>
