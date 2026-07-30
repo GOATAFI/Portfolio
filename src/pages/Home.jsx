@@ -1,6 +1,7 @@
 import StoryRenderer from "../components/story/StoryRenderer";
 import { story } from "../data/story";
 
+
 export default function Home() {
   return (
     <>
