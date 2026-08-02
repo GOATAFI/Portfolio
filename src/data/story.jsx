@@ -89,7 +89,7 @@ export const story = [
     ),
   },
 
-  {
+    {
     id: 13,
     type: "quote",
     text: "That made me look back at my own journey.",
@@ -97,6 +97,11 @@ export const story = [
 
   {
     id: 14,
+    type: "beforeFilm",
+  },
+
+  {
+    id: 15,
     type: "chapter",
     subtitle: "Chapter One",
     title: (
@@ -109,25 +114,26 @@ export const story = [
   },
 
   {
-    id: 15,
-    type: "achievement",
-    eyebrow: "2024",
-    title: "Best Film Award",
-    description:
-      "10th International Children's Film Festival. Winning taught me that great visuals impress people—but meaningful stories stay with them.",
-  },
-
-  {
     id: 16,
-    type: "identityQuote",
+    type: "achievement",
+    eyebrow: "2016",
+    title: "10th International Children's Film Festival",
+    description:
+      "We started by making videos just for fun. One opportunity changed everything—and eventually led us to become Champions.",
   },
 
   {
     id: 17,
-    type: "identity",
+    type: "newsReveal",
   },
+
   {
     id: 18,
-    type: "newsReveal",
-},
+    type: "identityQuote",
+  },
+
+  {
+    id: 19,
+    type: "identity",
+  },
 ];
