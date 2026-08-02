@@ -3,7 +3,7 @@ import Chapter from "./Chapter";
 import StoryCard from "./StoryCard";
 import Identity from "../../sections/Identity/Identity";
 import IdentityQuote from "../../sections/IdentityQuote/IdentityQuote";
-
+import NewsReveal from "./NewsReveal";
 
 export default function StoryRenderer({ scene }) {
   switch (scene.type) {
@@ -32,6 +32,8 @@ export default function StoryRenderer({ scene }) {
 
     case "identity":
       return <Identity />;
+    case "newsReveal":
+  return <NewsReveal />;
 
     default:
       return null;

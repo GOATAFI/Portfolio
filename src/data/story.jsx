@@ -126,4 +126,8 @@ export const story = [
     id: 17,
     type: "identity",
   },
+  {
+    id: 18,
+    type: "newsReveal",
+},
 ];
