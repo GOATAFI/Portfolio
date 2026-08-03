@@ -89,7 +89,7 @@ export const story = [
     ),
   },
 
-    {
+  {
     id: 13,
     type: "quote",
     text: "That made me look back at my own journey.",
@@ -97,29 +97,21 @@ export const story = [
 
   {
     id: 14,
-    type: "beforeFilm",
+    type: "identityQuote",
   },
 
   {
     id: 15,
-    type: "chapter",
-    subtitle: "Chapter One",
-    title: (
-      <>
-        Learning to
-        <br />
-        tell stories.
-      </>
-    ),
+    type: "identity",
   },
 
   {
     id: 16,
     type: "achievement",
     eyebrow: "2016",
-    title: "10th International Children's Film Festival",
+    title: "Champion",
     description:
-      "We started by making videos just for fun. One opportunity changed everything—and eventually led us to become Champions.",
+      "10th International Children's Film Festival",
   },
 
   {
@@ -129,11 +121,39 @@ export const story = [
 
   {
     id: 18,
-    type: "identityQuote",
+    type: "quote",
+    text: (
+      <>
+        But...
+        <br />
+        it didn't start here.
+      </>
+    ),
   },
 
   {
     id: 19,
-    type: "identity",
+    type: "beforeFilm",
   },
+
+  {
+    id: 20,
+    type: "quote",
+    text: (
+      <>
+        One opportunity...
+        <br />
+        changed everything.
+      </>
+    ),
+  },
+
+  {
+  id: 21,
+  type: "facebookMoment",
+},
+{
+  id: 22,
+  type: "decision",
+},
 ];
