@@ -10,6 +10,7 @@ import Decision from "./Decision";
 import ChatMoment from "./ChatMoment";
 import Selected from "./Selected";
 import CompetitionMontage from "./CompetitionMontage";
+import HarvardFindings from "./HarvardFindings";
 
 export default function StoryRenderer({ scene }) {
   switch (scene.type) {
@@ -52,6 +53,8 @@ export default function StoryRenderer({ scene }) {
   return <Selected />;
   case "competitionMontage":
   return <CompetitionMontage />;
+  case "harvardFindings":
+  return <HarvardFindings />;
 
     default:
       return null;

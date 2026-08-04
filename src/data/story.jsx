@@ -74,20 +74,9 @@ export const story = [
   },
 
   {
-    id: 12,
-    type: "achievement",
-    eyebrow: "Harvard Business School",
-    title: "They found three things.",
-    description: (
-      <>
-        • An unorthodox skill set
-        <br />
-        • A resilient mindset
-        <br />
-        • A personality that united the team
-      </>
-    ),
-  },
+  id: 12,
+  type: "harvardFindings",
+},
 
   {
     id: 13,
@@ -96,72 +85,66 @@ export const story = [
   },
 
   {
-    id: 14,
-    type: "identityQuote",
-  },
+  id: 14,
+  type: "identityQuote",
+},
 
-  {
-    id: 15,
-    type: "identity",
-  },
+{
+  id: 15,
+  type: "identity",
+},
 
-  {
-    id: 16,
-    type: "achievement",
-    eyebrow: "2016",
-    title: "Champion",
-    description:
-      "10th International Children's Film Festival",
-  },
+{
+  id: 16,
+  type: "newsReveal",
+},
 
-  {
-    id: 17,
-    type: "newsReveal",
-  },
+{
+  id: 17,
+  type: "quote",
+  text: (
+    <>
+      But...
+      <br />
+      it didn't start here.
+    </>
+  ),
+},
 
-  {
-    id: 18,
-    type: "quote",
-    text: (
-      <>
-        But...
-        <br />
-        it didn't start here.
-      </>
-    ),
-  },
+{
+  id: 18,
+  type: "beforeFilm",
+},
 
-  {
-    id: 19,
-    type: "beforeFilm",
-  },
+{
+  id: 19,
+  type: "quote",
+  text: (
+    <>
+      One opportunity...
+      <br />
+      changed everything.
+    </>
+  ),
+},
 
-  {
-    id: 20,
-    type: "quote",
-    text: (
-      <>
-        One opportunity...
-        <br />
-        changed everything.
-      </>
-    ),
-  },
-
-  {
-  id: 21,
+{
+  id: 20,
   type: "facebookMoment",
 },
+
 {
-    id:22,
-    type:"chatMoment"
+  id: 21,
+  type: "chatMoment",
 },
+
 {
-  id: 23,
+  id: 22,
   type: "selected",
 },
+
 {
-  id: 24,
+  id: 23,
   type: "competitionMontage",
 },
 ];
