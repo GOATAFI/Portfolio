@@ -153,7 +153,15 @@ export const story = [
   type: "facebookMoment",
 },
 {
-  id: 22,
-  type: "decision",
+    id:22,
+    type:"chatMoment"
+},
+{
+  id: 23,
+  type: "selected",
+},
+{
+  id: 24,
+  type: "competitionMontage",
 },
 ];

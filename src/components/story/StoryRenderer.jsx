@@ -7,6 +7,9 @@ import NewsReveal from "./NewsReveal";
 import BeforeFilm from "./BeforeFilm";
 import FacebookMoment from "./FacebookMoment";
 import Decision from "./Decision";
+import ChatMoment from "./ChatMoment";
+import Selected from "./Selected";
+import CompetitionMontage from "./CompetitionMontage";
 
 export default function StoryRenderer({ scene }) {
   switch (scene.type) {
@@ -43,6 +46,12 @@ export default function StoryRenderer({ scene }) {
   return <FacebookMoment />;
   case "decision":
   return <Decision />;
+  case "chatMoment":
+    return <ChatMoment />;
+    case "selected":
+  return <Selected />;
+  case "competitionMontage":
+  return <CompetitionMontage />;
 
     default:
       return null;
