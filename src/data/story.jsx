@@ -147,4 +147,103 @@ export const story = [
   id: 23,
   type: "competitionMontage",
 },
+{
+  id:24,
+  type:"josephite",
+},
+{
+  id: 25,
+  type: "quote",
+  text: (
+    <>
+      By then...
+      <br />
+      <br />
+      I knew exactly
+      <br />
+      what I wanted.
+    </>
+  ),
+},
+
+{
+  id: 26,
+  type: "quote",
+  text: (
+    <>
+      Unfortunately...
+      <br />
+      <br />
+      I wasn't the only one
+      <br />
+      making that decision.
+    </>
+  ),
+},
+
+{
+  id: 27,
+  type: "quote",
+  text: (
+    <>
+      Typical
+      <br />
+      Brown
+      <br />
+      Parents.
+    </>
+  ),
+},
+
+{
+  id: 28,
+  type: "quote",
+  text: "Engineering.",
+},
+
+{
+  id: 29,
+  type: "quote",
+  text: (
+    <>
+      So...
+      <br />
+      <br />
+      I became a
+      <br />
+      Computer Science
+      <br />
+      student.
+    </>
+  ),
+},
+
+{
+  id: 30,
+  type: "quote",
+  text: (
+    <>
+      But...
+      <br />
+      <br />
+      I never stopped
+      <br />
+      telling stories.
+    </>
+  ),
+},
+
+{
+  id: 31,
+  type: "quote",
+  text: (
+    <>
+      I simply found
+      <br />
+      a different
+      <br />
+      way to tell them.
+    </>
+  ),
+},
 ];

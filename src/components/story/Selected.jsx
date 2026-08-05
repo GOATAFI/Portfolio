@@ -1,87 +1,108 @@
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import FullScreen from "../layout/FullScreen";
 
+import useTimeline from "../../hooks/useTimeline";
 export default function Selected() {
+  const ref = useRef(null);
+
+  const isInView = useInView(ref, {
+    once: true,
+    amount: 0.6,
+  });
+
+
+const step = useTimeline(
+  isInView,
+  [
+    1600,
+    1200,
+    1200,
+  ]
+);
+
   return (
     <FullScreen className="bg-black overflow-hidden">
 
-      <div className="max-w-5xl mx-auto text-center">
+      <div
+        ref={ref}
+        className="max-w-5xl mx-auto text-center"
+      >
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: .5 }}
-          className="uppercase tracking-[0.35em] text-zinc-600"
-        >
-          We made the film.
-        </motion.p>
+        <AnimatePresence mode="wait">
 
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: .5,
-            duration: .7,
-            ease: [0.22,1,0.36,1],
-          }}
-          className="mt-8 text-5xl md:text-8xl font-light leading-tight"
-        >
-          Before the
-          <br />
-          deadline.
-        </motion.h1>
+          {step === 0 && (
+            <motion.div
+              key="film"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{
+                duration: .8,
+                ease: [0.22,1,0.36,1],
+              }}
+            >
+              <p className="uppercase tracking-[0.35em] text-zinc-600">
+                We made the film.
+              </p>
+            </motion.div>
+          )}
 
-        <motion.div
-          initial={{
-            opacity: 0,
-            scaleX: 0,
-          }}
-          whileInView={{
-            opacity: 1,
-            scaleX: 1,
-          }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 1.8,
-            duration: .5,
-          }}
-          className="mx-auto my-16 h-px w-40 bg-zinc-700 origin-center"
-        />
+          {step === 1 && (
+            <motion.div
+              key="deadline"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                duration: .8,
+              }}
+            >
+              <h1 className="text-6xl md:text-8xl font-light leading-tight">
+                Before the
+                <br />
+                deadline.
+              </h1>
+            </motion.div>
+          )}
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 2.3,
-            duration: .5,
-          }}
-          className="text-2xl md:text-4xl text-zinc-400"
-        >
-          Then...
-        </motion.p>
+          {step === 2 && (
+            <motion.div
+              key="then"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <p className="text-3xl text-zinc-400">
+                Then...
+              </p>
+            </motion.div>
+          )}
 
-        <motion.h2
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 3,
-            duration: .7,
-            ease:[0.22,1,0.36,1]
-          }}
-          className="mt-10 text-6xl md:text-9xl font-light"
-        >
-          We got selected.
-        </motion.h2>
+          {step === 3 && (
+            <motion.div
+              key="selected"
+              initial={{
+                opacity: 0,
+                scale: .96,
+              }}
+              animate={{
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: .8,
+              }}
+            >
+              <h1 className="text-6xl md:text-9xl font-light">
+                We got
+                <br />
+                selected.
+              </h1>
+            </motion.div>
+          )}
+
+        </AnimatePresence>
 
       </div>
 

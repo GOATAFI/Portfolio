@@ -11,6 +11,8 @@ import ChatMoment from "./ChatMoment";
 import Selected from "./Selected";
 import CompetitionMontage from "./CompetitionMontage";
 import HarvardFindings from "./HarvardFindings";
+import Josephite from "./Josephite";
+import LifeHappened from "./LifeHappened";
 
 export default function StoryRenderer({ scene }) {
   switch (scene.type) {
@@ -55,6 +57,11 @@ export default function StoryRenderer({ scene }) {
   return <CompetitionMontage />;
   case "harvardFindings":
   return <HarvardFindings />;
+case "josephite":
+  return <Josephite />;
+case "lifeHappened":
+  return <LifeHappened />;
+
 
     default:
       return null;
