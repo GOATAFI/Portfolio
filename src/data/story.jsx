@@ -228,7 +228,7 @@ export const story = [
       <br />
       I never stopped
       <br />
-      telling stories.
+      creating.
     </>
   ),
 },
@@ -238,11 +238,248 @@ export const story = [
   type: "quote",
   text: (
     <>
-      I simply found
+      University opened
       <br />
-      a different
+      a few new doors.
+    </>
+  ),
+},
+
+{
+  id: 32,
+  type: "quote",
+  text: (
+    <>
+      And this was
       <br />
-      way to tell them.
+      one of them.
+    </>
+  ),
+},
+
+{
+  id: 33,
+  type: "technoxianGallery",
+},
+
+{
+  id: 34,
+  type: "quote",
+  text: (
+    <>
+      1st Technoxian Bangladesh
+      <br />
+      National Round – 2024
+      <br />
+      <br />
+      AD Making
+      <br />
+      Runner-Up.
+    </>
+  ),
+},
+{
+  id: 35,
+  type: "quote",
+  text: (
+    <>
+      Eventually...
+      <br />
+      <br />
+      I graduated.
+    </>
+  ),
+},
+
+{
+  id: 36,
+  type: "quote",
+  text: (
+    <>
+      A friend
+      <br />
+      reached out.
+    </>
+  ),
+},
+
+{
+  id: 37,
+  type: "quote",
+  text: (
+    <>
+      He thought...
+      <br />
+      <br />
+      I'd be
+      <br />
+      a good fit.
+    </>
+  ),
+},
+
+{
+  id: 38,
+  type: "quote",
+  text: (
+    <>
+      He was right.
+    </>
+  ),
+},
+
+{
+  id: 39,
+  type: "quote",
+  text: (
+    <>
+      GearON.
+    </>
+  ),
+},
+
+{
+  id: 40,
+  type: "quote",
+  text: (
+    <>
+      I finally got
+      <br />
+      to create
+      <br />
+      every single day.
+    </>
+  ),
+},
+
+{
+  id: 41,
+  type: "quote",
+  text: (
+    <>
+      Five brands.
+      <br />
+      <br />
+      One creator.
+    </>
+  ),
+},
+
+{
+  id: 42,
+  type: "quote",
+  text: (
+    <>
+      Content.
+      <br />
+      Strategy.
+      <br />
+      Design.
+      <br />
+      Scripts.
+    </>
+  ),
+},
+
+{
+  id: 43,
+  type: "quote",
+  text: (
+    <>
+      I wasn't just
+      <br />
+      posting content.
+    </>
+  ),
+},
+
+{
+  id: 44,
+  type: "quote",
+  text: (
+    <>
+      I was building
+      <br />
+      brands.
+    </>
+  ),
+},
+{
+  id: 45,
+  type: "quote",
+  text: (
+    <>
+      The results
+      <br />
+      started speaking.
+    </>
+  ),
+},
+{
+  id: 46,
+  type: "quote",
+  text: (
+    <>
+      Not every idea
+      <br />
+      got approved.
+    </>
+  ),
+},
+
+{
+  id: 47,
+  type: "quote",
+  text: (
+    <>
+      Not every script
+      <br />
+      got produced.
+    </>
+  ),
+},
+
+{
+  id: 48,
+  type: "quote",
+  text: (
+    <>
+      But every single one
+      <br />
+      made me better.
+    </>
+  ),
+},
+{
+  id: 49,
+  type: "quote",
+  text: (
+    <>
+      Enough
+      <br />
+      about me.
+    </>
+  ),
+},
+
+{
+  id: 50,
+  type: "quote",
+  text: (
+    <>
+      Let's look
+      <br />
+      at the work.
+    </>
+  ),
+},
+
+{
+  id: 51,
+  type: "quote",
+  text: (
+    <>
+      Proof.
     </>
   ),
 },

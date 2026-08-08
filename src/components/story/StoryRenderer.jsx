@@ -13,6 +13,13 @@ import CompetitionMontage from "./CompetitionMontage";
 import HarvardFindings from "./HarvardFindings";
 import Josephite from "./Josephite";
 import LifeHappened from "./LifeHappened";
+import TechnoxianGallery from "./TechnoxianGallery";
+
+// import tech1 from "../../assets/technoxian/1.jpg";
+// import tech2 from "../../assets/technoxian/2.jpg";
+// import tech3 from "../../assets/technoxian/3.jpg";
+// import tech4 from "../../assets/technoxian/4.jpg";
+// import tech5 from "../../assets/technoxian/5.jpg";
 
 export default function StoryRenderer({ scene }) {
   switch (scene.type) {
@@ -61,8 +68,8 @@ case "josephite":
   return <Josephite />;
 case "lifeHappened":
   return <LifeHappened />;
-
-
+case "technoxianGallery":
+  return <TechnoxianGallery />;
     default:
       return null;
   }
